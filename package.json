@@ -1,0 +1,26 @@
+{
+  "name": "music-festival",
+  "version": "1.0.0",
+  "description": "Project with GULP, SASS & HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jorge-I-Vidovic/Music-Festival.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp"
+  ],
+  "author": "Jorge I. Vidovic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jorge-I-Vidovic/Music-Festival/issues"
+  },
+  "homepage": "https://github.com/Jorge-I-Vidovic/Music-Festival#readme",
+  "devDependencies": {
+    "sass": "^1.58.3"
+  }
+}
