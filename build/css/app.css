@@ -352,6 +352,12 @@ h3 {
 p {
   font-size: 2rem;
   color: #000;
+  line-height: 3rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .header {
@@ -432,4 +438,24 @@ p {
   font-weight: 700;
   font-size: 2.4rem;
   margin: 0;
+}
+
+.aboutFestival {
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+}
+
+.festivalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.festivalContent h2 {
+  margin-bottom: 2rem;
+}
+.festivalContent .date {
+  color: #f53756;
+  font-weight: 700;
 }
