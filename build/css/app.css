@@ -352,7 +352,7 @@ h3 {
 p {
   font-size: 2rem;
   color: #000;
-  line-height: 3rem;
+  line-height: 1.5;
 }
 
 img {
@@ -442,15 +442,25 @@ img {
 
 .aboutFestival {
   padding: 5rem 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 5rem;
+}
+@media (min-width: 768px) {
+  .aboutFestival {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
 }
 
 .festivalContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .festivalContent {
+    margin-top: 0;
+  }
 }
 .festivalContent h2 {
   margin-bottom: 2rem;
