@@ -471,3 +471,132 @@ img {
   color: #f53756;
   font-weight: 700;
 }
+
+.lineup {
+  background-color: #f53756;
+  padding: 5rem 0;
+}
+.lineup h3, .lineup p {
+  text-align: center;
+  color: #FFF;
+}
+.lineup .day {
+  text-transform: uppercase;
+  margin: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .stageContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+.stageContainer p {
+  color: #000;
+  font-weight: 700;
+}
+
+.stage {
+  padding-top: 2rem;
+}
+.stage .nameStage:after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 2rem auto 0 auto;
+}
+
+.Reggaeton .nameStage:after {
+  background-image: url(../img/icono_rock.png);
+}
+
+.EDM .nameStage:after {
+  background-image: url(../img/icono_edm.png);
+}
+
+.calendary {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calendary li {
+  padding: 2.5rem;
+  font-weight: 700;
+}
+.calendary li span {
+  font-weight: 400;
+}
+
+.bg1 {
+  background-color: #FEF46D;
+}
+.bg1 li:nth-child(odd) {
+  background-color: #fdec08;
+}
+
+.bg2 {
+  background-color: #1bd6cd;
+}
+.bg2 li:nth-child(odd) {
+  background-color: #15a9a2;
+}
+
+.gallery {
+  padding: 5rem 0;
+}
+.gallery h3 {
+  text-align: center;
+}
+
+.galleryImages {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 480px) {
+  .galleryImages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  .galleryImages {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .galleryImages {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+picture {
+  display: block;
+  max-width: 90rem;
+}

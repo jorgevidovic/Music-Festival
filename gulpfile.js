@@ -51,13 +51,21 @@ function toAvif(done){
     done();
 }
 
+function javaScript(done){
+    src('src/js/**/*.js')
+    .pipe(dest('build/js'));
+    done();
+}
+
 function dev(done){
     watch("src/scss/**/*.scss", css);
+    watch("src/js/**/*.js", javaScript);
     done();
 }
 
 exports.css = css;
+exports.javaScript = javaScript;
 exports.toImageMin = toImageMin;
 exports.toWebp = toWebp;
 exports.toAvif = toAvif;
-exports.dev = parallel(toImageMin, toWebp, toAvif, dev);
+exports.dev = parallel(toImageMin, toWebp, toAvif, javaScript, dev);
