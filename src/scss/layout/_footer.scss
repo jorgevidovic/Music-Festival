@@ -1,0 +1,13 @@
+@use 'base/variables' as v;
+
+.siteFooter{
+    background-color: v.$lightRed;
+    padding: 2rem;
+
+    p{
+        margin: 0;
+        text-align: center;
+        color: v.$white;
+        font-weight: 500;
+    }
+}

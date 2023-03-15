@@ -310,6 +310,7 @@ template {
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -327,6 +328,12 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
+}
+body.setBody {
+  overflow: hidden;
+}
+body.fixed-scroll {
+  padding-top: 8.6rem;
 }
 
 a {
@@ -365,6 +372,15 @@ img {
 .header {
   padding: 2rem;
   background-color: #1bd6cd;
+}
+@media (min-width: 768px) {
+  .header.fixed {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0.1rem 0.1rem 0.1rem #aaa;
+  }
 }
 .header h1 {
   color: #FFF;
@@ -547,6 +563,7 @@ img {
 }
 
 .gallery {
+  margin-top: 5rem;
   padding: 5rem 0;
 }
 .gallery h3 {
@@ -599,4 +616,87 @@ img {
 picture {
   display: block;
   max-width: 90rem;
+}
+
+.btn-closeModal {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: #FFF;
+  color: #000;
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+}
+.btn-closeModal:hover {
+  cursor: pointer;
+}
+
+.tickets {
+  padding: 3rem 0;
+}
+.tickets h3 {
+  text-align: center;
+  color: #000;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .tickets .ticketsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.pass .passName {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.pass .passHeader, .pass .passFooter {
+  padding: 0.5rem;
+  margin: 0;
+}
+.pass .passHeader p, .pass .passFooter p {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.pass .passHeader {
+  background-color: #f53756;
+}
+.pass .passHeader p {
+  text-transform: uppercase;
+}
+.pass .passBody {
+  background-color: #FFF;
+  color: #000;
+  font-weight: 500;
+}
+.pass .passBody ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pass .passBody ul li, .pass .passBody ul :nth-child(odd) {
+  background-color: #FFF;
+  padding: 1rem;
+  border-bottom: 1px solid gray;
+}
+.pass .passFooter {
+  background-color: #f53756;
+}
+
+.siteFooter {
+  background-color: #f53756;
+  padding: 2rem;
+}
+.siteFooter p {
+  margin: 0;
+  text-align: center;
+  color: #FFF;
+  font-weight: 500;
 }

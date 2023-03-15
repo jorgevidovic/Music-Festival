@@ -3,6 +3,7 @@
 html{
     font-size: 62.5%; // 1rem = 10px
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -20,6 +21,14 @@ html{
 body{
     font-family: v.$mainFont;
     font-size: 1.6rem;
+
+    &.setBody{
+        overflow: hidden;
+    }
+
+    &.fixed-scroll{
+        padding-top: 8.6rem;
+    }
 }
 
 a{

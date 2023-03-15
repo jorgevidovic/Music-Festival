@@ -2,6 +2,7 @@
 @use 'base/mixins' as m;
 
 .gallery{
+    margin-top: 5rem;
     padding: 5rem 0;
 
     h3{
@@ -42,4 +43,19 @@
 picture{
     display: block;
     max-width: 90rem;
+}
+
+.btn-closeModal{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: v.$white;
+    color: v.$black;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
