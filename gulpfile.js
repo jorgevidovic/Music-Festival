@@ -18,6 +18,7 @@ function css(done){
     src("src/scss/**/*.scss")  // Identificar el archivo SASS
     .pipe(plumber())
     .pipe(sass())  // Compilarlo
+    .pipe([autoprefixer(), cssnano()])
     .pipe(dest("build/css")); // Almacernala en el disco duro
     done(); // Callback que avisa a gulp cuando llegamos al final
 }
